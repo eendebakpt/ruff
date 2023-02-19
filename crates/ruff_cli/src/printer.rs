@@ -8,8 +8,11 @@ use std::path::Path;
 use annotate_snippets::display_list::{DisplayList, FormatOptions};
 use annotate_snippets::snippet::{Annotation, AnnotationType, Slice, Snippet, SourceAnnotation};
 use anyhow::Result;
-use colored::control::SHOULD_COLORIZE;
-use colored::Colorize;
+use owo_colors::OwoColorize;
+//use owo_colors::colored::control::SHOULD_COLORIZE; // does not exist
+
+
+
 use itertools::{iterate, Itertools};
 use rustc_hash::FxHashMap;
 use serde::Serialize;
@@ -612,7 +615,7 @@ fn print_message<T: Write>(
                 fold: false,
             }],
             opt: FormatOptions {
-                color: SHOULD_COLORIZE.should_colorize(),
+                color: true,
                 ..FormatOptions::default()
             },
         };
@@ -718,7 +721,7 @@ fn print_grouped_message<T: Write>(
                 fold: false,
             }],
             opt: FormatOptions {
-                color: SHOULD_COLORIZE.should_colorize(),
+                color: true,
                 ..FormatOptions::default()
             },
         };

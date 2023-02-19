@@ -37,6 +37,7 @@ clap = { workspace = true, features = ["derive", "env"] }
 clap_complete_command = { version = "0.4.0" }
 clearscreen = { version = "2.0.0" }
 colored = { version = "2.0.0" }
+owo-colors = { version = "3.5.0" }
 filetime = { version = "0.2.17" }
 glob = { version = "0.3.0" }
 ignore = { version = "0.4.18" }

@@ -8,6 +8,7 @@ rust-version = { workspace = true }
 anyhow = { workspace = true }
 clap = { workspace = true }
 colored = { version = "2.0.0" }
+owo-colors = { version = "3.5.0" }
 configparser = { version = "3.0.2" }
 once_cell = { workspace = true }
 regex = { workspace = true }

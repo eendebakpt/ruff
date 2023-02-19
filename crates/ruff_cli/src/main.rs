@@ -5,7 +5,8 @@ use std::sync::mpsc::channel;
 
 use anyhow::Result;
 use clap::{CommandFactory, Parser, Subcommand};
-use colored::Colorize;
+//use colored::Colorize;
+use owo_colors::OwoColorize;
 use notify::{recommended_watcher, RecursiveMode, Watcher};
 
 use ::ruff::logging::{set_up_logging, LogLevel};

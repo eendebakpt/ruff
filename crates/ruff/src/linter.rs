@@ -2,7 +2,8 @@ use std::borrow::Cow;
 use std::path::Path;
 
 use anyhow::{anyhow, Result};
-use colored::Colorize;
+//use colored::Colorize;
+use owo_colors::OwoColorize;
 use log::error;
 use rustc_hash::FxHashMap;
 use rustpython_parser::error::ParseError;
